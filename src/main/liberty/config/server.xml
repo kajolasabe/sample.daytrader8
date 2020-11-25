@@ -25,7 +25,7 @@
    <!--<logging traceSpecification="daytrader=fine"/>-->
 
    <!-- allow reuse of 'busy' ports for fast server recycling on linux (where ports remain blocked for up to 2 mins after server stops) ${tradelite.http.port} set in bootstrap.properties -->
-   <httpEndpoint host="*" httpPort="${default.http.port}" httpsPort="${default.https.port}" id="defaultHttpEndpoint">
+   <httpEndpoint host="*" httpPort="9080" httpsPort="9443" id="defaultHttpEndpoint">
       <tcpOptions soReuseAddr="true" />
       <httpOptions maxKeepAliveRequests="-1" />
    </httpEndpoint>
